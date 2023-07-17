@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vinay💞Pooja</title>
+	<meta name="description" content="A draggable menu that shows a thumbnail preview of an image grid" />
+	<meta name="keywords" content="draggable, menu, navigation, thumbnails, grid, javascript, gsap, web design, layout" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://use.typekit.net/crf4rue.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+</head>
+
+<body class="loading">
+	<main>
+		<div class="frame">
+			<!-- <div class="frame__pagetitle">Draggable Menu with Grid Previews</div> -->
+			<div class="frame__title-wrap">
+				<h1 class="frame__title">VINAY <br> &nbsp; &nbsp;💞 <br> POOJA</h1>
+				<!-- <h1 class="frame__title"> POOJA</h1> -->
+				<p class="frame__tagline">25th of June 2023</p>
+			</div>
+			<div class="frame__links">
+				<!-- <a href="https://tympanus.net/Development/DraggableImageStrip/"></a>
+				<a href="https://tympanus.net/codrops/?p=40926"></a>
+				<a href="https://github.com/codrops/DraggableMenu/"></a> -->
+			</div>
+			<div class="frame__social">
+				<a href="#" aria-label="Link to Yuri's Behance profile"><img src="img/behance.svg" class="frame__social-behance" alt="Behance Logo" /></a>
+			</div>
+		</div>
+		<div class="page page--preview">
+			<div class="grid-wrap">
+				<div class="grid grid--layout-1">
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/19.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/20.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/21.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/22.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/23.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/24.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/25.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/26.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/27.jpg)"></div>
+					</div>
+				</div>
+				<div class="grid grid--layout-2">
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/28.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/29.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/30.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/31.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/32.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/33.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/34.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/35.jpg)"></div>
+					</div>
+				</div>
+				<div class="grid grid--layout-3">
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/36.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/37.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/38.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/39.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/40.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/41.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/42.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/43.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/44.jpg)"></div>
+					</div>
+				</div>
+				<div class="grid grid--layout-4">
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/45.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/46.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/47.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/48.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/49.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/50.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/51.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/52.jpg)"></div>
+					</div>
+				</div>
+				<div class="grid grid--layout-5">
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/53.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/54.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/55.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/56.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/57.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/58.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/59.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/60.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/61.jpg)"></div>
+					</div>
+				</div>
+				<div class="grid grid--layout-5">
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/62.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/63.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/64.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/65.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/66.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/67.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/68.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/69.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/70.jpg)"></div>
+					</div>
+				</div>
+				<div class="grid grid--layout-5">
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/71.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/72.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/73.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/74.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/75.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/76.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/77.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/78.jpg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/68.jpg)"></div>
+					</div>
+				</div>
+				<div class="grid grid--layout-5">
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/1.jpeg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/2.jpeg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/3.jpeg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/4.jpeg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/5.jpeg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/6.jpeg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/7.jpeg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/8.jpeg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/9.jpeg)"></div>
+					</div>
+				</div>
+				<div class="grid grid--layout-5">
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/10.jpeg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/11.jpeg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/12.jpeg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/13.jpeg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/14.jpeg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/15.jpeg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/16.jpeg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/17.jpeg)"></div>
+					</div>
+					<div class="grid__item-wrap">
+						<div class="grid__item" style="background-image: url(img/18.jpeg)"></div>
+					</div>
+				</div>
+				<button class="gridback"><svg width="27px" height="15px" viewBox="0 0 27 15">
+						<path d="M1.469 6.75l-.719.719 7.938 6.937.718-.719L1.47 6.75zM8.594.531L.75 7.375l.688.688L9.28 1.218 8.594.53zM1.406 6.938v1h24.75v-1H1.406z" fill="#de6565" />
+					</svg><span style="color: black;">&nbsp; Back</span></button>
+			</div><!-- /grid-wrap -->
+		</div><!-- /page -->
+		<div class="menu-wrap">
+			<div class="menu-draggable"></div>
+			<nav class="menu">
+				<div class="menu__item">
+					<a class="menu__item-link">Handsome</a>
+					<a class="menu__item-explore">open All</a>
+				</div>
+				<div class="menu__item">
+					<a class="menu__item-link">gorgeous</a>
+					<a class="menu__item-explore">open All</a>
+				</div>
+				<div class="menu__item">
+					<a class="menu__item-link">Beautiful </a>
+					<a class="menu__item-explore">open All</a>
+				</div>
+				<div class="menu__item">
+					<a class="menu__item-link">Sweet</a>
+					<a class="menu__item-explore">open All</a>
+				</div>
+				<div class="menu__item">
+					<a class="menu__item-link">Charming</a>
+					<a class="menu__item-explore">open All</a>
+				</div>
+				<div class="menu__item">
+					<a class="menu__item-link">Adorable</a>
+					<a class="menu__item-explore">open All</a>
+				</div>
+				<div class="menu__item">
+					<a class="menu__item-link">Pretty</a>
+					<a class="menu__item-explore">open All</a>
+				</div>
+				<div class="menu__item">
+					<a class="menu__item-link">Beautiful Couple</a>
+					<a class="menu__item-explore">open All</a>
+				</div>
+				<div class="menu__item">
+					<a class="menu__item-link">Sweet Couple</a>
+					<a class="menu__item-explore">open All</a>
+				</div>
+			</nav><!--menu-->
+		</div><!--/menu-wrap-->
+	</main>
+	<div class="cursor">
+		<div class="cursor__inner cursor__inner--circle">
+			<div class="cursor__side cursor__side--left"></div>
+			<div class="cursor__side cursor__side--right"></div>
+		</div>
+	</div>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/charming.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/draggabilly.pkgd.min.js"></script>
+	<script src="js/demo.js"></script>
+</body>
+
+</html>
